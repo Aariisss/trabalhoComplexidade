@@ -1,7 +1,5 @@
 
-# ==========================================
 # VARIAVEIS GLOBAIS
-# ==========================================
 
 dados = []
 MAX = 0
@@ -17,9 +15,7 @@ rpos = 0
 quantidade = 0
 
 
-# ==========================================
 # INICIALIZAR ESTRUTURA
-# ==========================================
 
 def inicializa(tipo):
     global dados, MAX, ponteiro
@@ -43,9 +39,7 @@ def inicializa(tipo):
     print("\nEstrutura criada com sucesso!")
 
 
-# ==========================================
 # PILHA
-# ==========================================
 
 def push_pilha(valor):
     global dados, ponteiro
@@ -85,9 +79,7 @@ def show_pilha():
         print(dados[i])
 
 
-# ==========================================
 # FILA
-# ==========================================
 
 def push_fila(valor):
     global dados, spos, rpos, quantidade
@@ -146,9 +138,7 @@ def show_fila():
         print(dados[i])
 
 
-# ==========================================
 # FILA CIRCULAR
-# ==========================================
 
 def push_circular(valor):
     global dados, spos, quantidade
@@ -193,9 +183,9 @@ def show_circular():
         print(dados[posicao])
 
 
-# ==========================================
+
 # MENU DAS ESTRUTURAS
-# ==========================================
+
 
 def menu_estrutura(tipo):
 
@@ -269,9 +259,9 @@ def menu_estrutura(tipo):
             print("Opcao invalida!")
 
 
-# ==========================================
+
 # ALGORITMOS DE ORDENACAO
-# ==========================================
+
 
 def ordenacao_bolha(A):
     n = len(A)
@@ -311,9 +301,9 @@ def ordenacao_insercao(A):
         A[i + 1] = chave
 
 
-# ==========================================
+
 # ORGANIZAR DADOS PARA ORDENACAO
-# ==========================================
+
 
 def obter_dados():
     global dados
@@ -364,9 +354,9 @@ def salvar_ordenacao(lista):
         spos = len(lista) % MAX
 
 
-# ==========================================
+
 # MENU DE ORDENACAO
-# ==========================================
+
 
 def menu_ordenacao():
 
@@ -415,9 +405,9 @@ def menu_ordenacao():
         print("Depois da ordenacao:", lista)
 
 
-# ==========================================
+
 # MENU PRINCIPAL
-# ==========================================
+
 
 opcao = 0
 
